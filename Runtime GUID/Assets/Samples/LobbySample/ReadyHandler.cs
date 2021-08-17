@@ -177,7 +177,7 @@ namespace LobbySample
                     //How we could get the GUID, but this does not work
                     var sceneGUID = sceneSystem.GetSceneGUID("Assets/CubeSample/SubScenes/CubeSampleSubScene.unity");
 #endif
-                    Debug.Log(sceneGUID);
+                    Debug.Log("SceneGUID ="+sceneGUID);
                     sceneSystem.LoadSceneAsync(sceneGUID);
 
                     EntityManager.SetComponentData(connection, new CommandTargetComponent{targetEntity = Entity.Null});
